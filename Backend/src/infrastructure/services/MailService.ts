@@ -1,6 +1,6 @@
 import { IMailService } from "@/domain/interfaces/services/IMailService";
 import { injectable } from "tsyringe";
-import nodemailer from "nodemailer";
+import * as nodemailer from "nodemailer";
 
 @injectable()
 export class MailService implements IMailService {
